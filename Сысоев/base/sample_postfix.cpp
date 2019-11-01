@@ -6,19 +6,17 @@ using namespace std;
 
 int main()
 {
-  string expression;
-  TPostfix postfix;
-  double res;
-
-  setlocale(LC_ALL, "Russian");
-  //cout << "Введите арифметическое выражение: ";
-  //cin >> expression;
-  //cout << expression << endl;
-  cout << "Арифметическое выражение: " << postfix.GetInfix() << endl;
-  postfix.ToPostfix();
-  cout << "Постфиксная форма: " << postfix.GetPostfix() << endl;
-  res = postfix.Calculate();
-  cout << res << endl;
-
-  return 0;
+	string form;
+	double res;
+	cout << "Enter form: ";
+	getline(cin, form);
+	TPostfix postfix(form);
+	if (postfix.CorrectForm(form))
+	{
+		cout << "Form: " << postfix.GetInfix() << endl;
+		cout << "Postfix form: " << postfix.ToPostfix() << endl;
+		cout << postfix.Calculate(postfix.ToPostfix()) << endl;
+	}
+	else
+		cout << "Brackets error!" << endl;
 }
