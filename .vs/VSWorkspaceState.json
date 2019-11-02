@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Сысоев",
-    "\\Сысоев\\base",
-    "\\Сысоев\\base_test"
+    "\\Гондурова",
+    "\\Гондурова\\base",
+    "\\Гондурова\\base_test"
   ],
-  "SelectedNode": "\\Сысоев\\base\\sample_postfix.cpp",
+  "SelectedNode": "\\Гондурова\\base\\postfix.h",
   "PreviewInSolutionExplorer": false
 }
